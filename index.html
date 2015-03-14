@@ -21,7 +21,15 @@ var arrayst = New Array();
 // let's imagine these "posts" come from a remote data call which has just returned
 for (var i = 0; i < posts.length; i++) {
     arrayst.push({title:'hello', url:'http://www.google.com', content:'content'});
+
 }
+Storage.prototype.setArray = function(key, obj) {
+    return this.setItem(key, JSON.stringify(obj))
+}
+Storage.prototype.getArray = function(key) {
+    return JSON.parse(this.getItem(key))
+}
+S
     }
 
     </script>
