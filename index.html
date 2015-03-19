@@ -17,10 +17,10 @@
     function onDeviceReady() {
         alert('connected');
         console.log('ok');
-var arrayst = New Array();
+var arrayst = new Array();
 // let's imagine these "posts" come from a remote data call which has just returned
 for (var i = 0; i < 5; i++) {
-    arrayst.push({title:'hello', url:'http://www.google.com', content:'content'});
+    arrayst.push({title:'hello', url:'oglegm', content:'content'});
 
 }
 Storage.prototype.setArray = function(key, obj) {
@@ -30,7 +30,7 @@ Storage.prototype.getArray = function(key) {
     return JSON.parse(this.getItem(key))
 }
 window.localStorage.setArray("cachedPosts", arrayst);
-var storage = window.localStorage.getArrat("cachedPosts");
+var storage = window.localStorage.getArray("cachedPosts");
 
 alert(storage);
 
